@@ -27,7 +27,7 @@ Click on the "New" link, you will see a small form with:
 - A dropdown where your existing contentypes pages will appear, choose the desire one
 - Input text, this will appear as the button label.
 - Add it in your template, wherever you want to display all the buttons (for example in _header.twig):
-   ```twig
-   {{ get_dialog_buttons() | raw }} 
-   ```
+```twig
+   {{ get_dialog_buttons() | raw }}
+```
 
