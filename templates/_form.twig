@@ -1,0 +1,16 @@
+{% extends "_base/_page-nav.twig" %}
+
+{% block page_main %}
+  <form>
+
+    <select name="page">
+      {% for page in pages %}
+        <option value="{{ page.id }}"># {{ page.id }} - {{ page.title }}</option>
+      {% endfor %}
+    </select>
+
+    Button label:
+    <input type="text" name="button">
+
+  </form>
+{% endblock %}

@@ -1,0 +1,18 @@
+<div class="header-home-intro">
+  <div class="intro region">
+    {{ intro | raw }}
+    <div class="buttons">
+      {% for button in buttons %}
+        <button class="{{ button.class }}" data-toggle="modal" data-target="#{{ button.target_id }}">
+          {{ button.title }}
+        </button>
+
+        <div id="{{ button.target_id }}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{ button.title }}">
+          <div class="modal-dialog" role="document">
+            {{ button.page | raw }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

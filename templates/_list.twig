@@ -1,0 +1,69 @@
+{% extends "_base/_page-nav.twig" %}
+
+{% block page_main %}
+
+  {#{% if app.canonicalpath %}#}
+    {#{% set languageslug = app.canonicalpath|split('/')[1] %}#}
+  {#{% else %}#}
+    {#{% set languageslug = app.paths.current|split('/')[1] %}#}
+
+    {#{{ languageslug }}#}
+  {#{% endif %}#}
+  {#&#123;&#35; --- set the language, otherwise fallback to default language --- &#35;&#125;#}
+  {#{% if languageslug in ['en', 'nl', 'de'] %}#}
+    {#{% set language = languageslug %}#}
+  {#{% else %}#}
+    {#{% set language = 'en' %}#}
+  {#{% endif %}#}
+
+  <h1>{{ language }}</h1>
+  <script src="/extensions/local/eamador/bolt-dialog-menu/web/jquery.dataTables.min.js"></script>
+  <script src="/extensions/local/eamador/bolt-dialog-menu/web/dataTables.bootstrap.min.js"></script>
+  <script src="/extensions/local/eamador/bolt-dialog-menu/web/extension.js"></script>
+
+  <a href="{{ new_link }}">
+    New
+  </a>
+
+  <table id="dialog-pages-list" class="table table-striped table-bordered" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Page id</th>
+        <th>Page title</th>
+        <th>Button text</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Page id</th>
+        <th>Page title</th>
+        <th>Button text</th>
+        <th>Actions</th>
+      </tr>
+    </tfoot>
+    <tbody>
+    {% for page in buttons %}
+      <tr>
+        <td>
+          {{ page.page.id }}
+        </td>
+        <td>
+          {{ page.page.title }}
+        </td>
+        <td>
+          {{ page.button.title }}
+        </td>
+        <td>
+          <a href="{{ page.delete_url }}">
+            Delete
+          </a>
+          <a href="{{ page.edit_url }}">
+            Edit
+          </a>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

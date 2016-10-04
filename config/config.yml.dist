@@ -1,0 +1,17 @@
+intro: "Text introduction"
+buttons:
+  0:
+    title: "Button 1 title"
+    class: button-one-class
+    target_id: modal-one-target-id
+    page: "page content"
+  1:
+    title: "Button 2 title"
+    class: button-two-class
+    target_id: modal-two-target-id
+    page: "page content"
+  2:
+    title: "Button 3 title"
+    class: button-three-class
+    target_id: modal-three-target-id
+    page: "page content"

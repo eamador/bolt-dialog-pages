@@ -1,0 +1,45 @@
+{
+    "name": "eamador/bolt-dialog-pages",
+    "description": "Menu items opens content in a dialog",
+    "type": "bolt-extension",
+    "version": "1.0.0",
+    "keywords": [
+        "dialog",
+        "bolt",
+        "menu"
+    ],
+    "require": {
+        "bolt/bolt": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Amador",
+            "email": "eamadorpaton@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Extension\\Eamador\\BoltDialogPages\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bolt\\Extension\\Eamador\\BoltDialogPages\\Tests\\": "tests",
+            "Bolt\\Tests\\": "vendor/bolt/bolt/tests/phpunit/unit/"
+        }
+    },
+    "extra": {
+        "bolt-assets": "web",
+        "bolt-class": "Bolt\\Extension\\Eamador\\BoltDialogPages\\BoltDialogPagesExtension",
+        "bolt-icon": "bolt-icon.png",
+        "bolt-screenshots": [
+            "screenshots/screenshot1.png"
+        ]
+    }
+}

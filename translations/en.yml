@@ -1,0 +1,13 @@
+dialogpages.flash.saved: "The dialog-page have been saved"
+dialogpages.flash.updated: "The dialog-page have been updated"
+dialogpages.flash.deleted: "The dialog-page have been deleted"
+dialogpages.flash.error: "Dialog-page couldn\'t be saved, we have restored it to it\'s last known good state."
+dialogpages.flash.updateError: "Dialog-page couldn\'t be updated, we have restored it to it\'s last known good state."
+dialogpages.flash.deleteError: "Dialog-page couldn\'t be deleted, we have restored it to it\'s last known good state."
+dialogpages.flash.nopages: "All the pages have a button"
+
+dialogpages.datatable.lang.lengthMenu: "Display _MENU_ records per page"
+dialogpages.datatable.lang.zeroRecords: "Nothing found - sorry"
+dialogpages.datatable.lang.info: "Showing page _PAGE_ of _PAGES_"
+dialogpages.datatable.lang.infoEmpty: "No records available"
+dialogpages.datatable.lang.infoFiltered: "(filtered from _MAX_ total records)"

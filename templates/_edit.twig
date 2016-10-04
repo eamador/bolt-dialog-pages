@@ -1,0 +1,16 @@
+{% extends "_base/_page-nav.twig" %}
+
+{% block page_main %}
+  <form>
+
+    <h1>
+      {{ edit.pageTitle }}
+    </h1>
+
+    <input type="hidden" name="id" value="{{ edit.page }}">
+
+    Button label:
+    <input type="text" name="button" value="{{ edit.title }}">
+
+  </form>
+{% endblock %}
